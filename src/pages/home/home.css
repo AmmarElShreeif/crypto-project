@@ -1,0 +1,221 @@
+.home {
+  padding: var(--padding);
+}
+.home .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .home-content {
+  margin-right: 10px;
+}
+.home .home-content .title {
+  color: var(--title);
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.home .home-content .sub-title {
+  color: var(--subtitle);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.home .home-content .cta-button {
+  padding: 1rem 2rem;
+  background-color: var(--blue);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.home .home-content .cta-button:hover {
+  background-color: var(--hover);
+}
+
+/* Subscribe Plan */
+.subscribe-plans {
+  padding: var(--padding);
+}
+.subscribe-plans .wrong-msg {
+  position: fixed;
+  inset: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  z-index: 9999;
+  width: 20%;
+  height: 10%;
+  padding: 0.1rem;
+  border-radius: 10px;
+  background-color: rgb(147, 54, 54);
+  transition: 0.5s;
+  transform: translateX(-180%);
+}
+.subscribe-plans .wrong-msg.active {
+  transform: translateX(0);
+}
+.subscribe-plans .wrong-msg .msg {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.subscribe-plans .title {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: var(--title);
+  text-align: center;
+}
+.subscribe-plans .subscribe-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+}
+.subscribe-plans .subscribe-card {
+  background: linear-gradient(
+    to bottom,
+    rgb(251 251 251 / 0%),
+    rgb(249 249 249 / 0%)
+  );
+  border: 1px solid var(--blue);
+  padding: 2rem 0;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.subscribe-plans .subscribe-card.active {
+  background: rgba(20, 69, 247, 0.104);
+}
+.subscribe-plans .subscribe-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  color: var(--title);
+}
+.subscribe-plans .subscribe-card .sub-title {
+  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
+  color: var(--subtitle);
+}
+.subscribe-plans .subscribe-card .price {
+  color: var(--title);
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+.subscribe-plans .subscribe-card .time {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
+}
+.subscribe-plans .subscribe-card .features-list {
+  list-style: none;
+  margin-bottom: 2.5rem;
+}
+.subscribe-plans .subscribe-card .features-list li {
+  margin-bottom: 1rem;
+  color: var(--title);
+  font-size: 1rem;
+  text-align: start;
+  margin-left: 1.2rem;
+}
+.subscribe-plans .subscribe-card .features-list li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  margin-right: 10px;
+  font-weight: 900;
+  color: var(--blue);
+}
+.subscribe-plans .subscribe-card .select-plan {
+  display: inline-block;
+  padding: 0.7rem 1.1rem;
+  background-color: var(--blue);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.subscribe-plans .subscribe-card .select-plan:hover {
+  background-color: var(--hover);
+}
+/* Testimonials */
+.testimonials {
+  padding: var(--padding);
+  text-align: center;
+  position: relative;
+}
+.testimonials .title {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: var(--title);
+}
+.testimonials-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 20px;
+}
+.testimonials-box .testimonial-card {
+  background-color: var(--bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  margin-top: 1.4rem;
+}
+.testimonials-box .testimonial-card img {
+  position: absolute;
+  right: -10px;
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid var(--primary);
+}
+.testimonials-box .testimonial-card h3 {
+  font-size: 1.5rem;
+  color: var(--title);
+  margin-top: 2.3rem;
+}
+.testimonials-box .testimonial-card .user-title {
+  font-size: 1rem;
+  color: var(--blue);
+}
+.testimonials-box .testimonial-card .testimonial-text {
+  font-size: 18px;
+  color: var(--subtitle);
+  margin: 1rem 0;
+}
+.call-to-action {
+  padding: var(--padding);
+  background-color: var(--bg);
+  text-align: center;
+}
+.call-to-action h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.7rem;
+  color: var(--title);
+}
+.call-to-action p {
+  font-size: 1.02rem;
+  margin-bottom: 4rem;
+  color: var(--subtitle);
+}
+.call-to-action .cta-button {
+  padding: 1rem 2rem;
+  background-color: var(--blue);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.call-to-action .cta-button:hover {
+  background-color: var(--hover);
+}

@@ -1,0 +1,31 @@
+.about {
+  padding: var(--padding);
+}
+.about .title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--title);
+  text-align: center;
+}
+.about .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.about .container .content {
+  flex: 1;
+  padding: 20px;
+}
+.about .container .content .desc {
+  font-size: 1.4rem;
+  text-align: start;
+  color: var(--subtitle);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.about .container .animation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}

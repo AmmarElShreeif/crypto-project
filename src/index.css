@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  transition: all 200ms ease;
+}
+:root {
+  --primary: rgb(10, 16, 26);
+  --border: rgba(63, 63, 70, 0.4);
+  --title: rgb(244 244 244);
+  --subtitle: rgb(161 161 170);
+  --blue: rgb(56, 97, 251);
+  --hover: rgb(20, 69, 247);
+  --bg: rgb(6, 9, 14, 0.9);
+  --padding: 4rem 1.2rem;
+}
+body.light {
+  --primary: rgb(255, 255, 255);
+  --border: rgba(202, 202, 202, 0.518);
+  --title: rgb(17, 17, 19);
+  --subtitle: rgb(82 82 91);
+  --bg: rgba(226, 226, 226, 0.93);
+}
+body {
+  background-color: var(--primary);
+}
+a {
+  cursor: pointer;
+}
+/* Scroll */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover);
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}

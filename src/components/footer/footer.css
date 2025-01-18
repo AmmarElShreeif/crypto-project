@@ -1,0 +1,81 @@
+.site-footer {
+  padding: 1.4rem 1.2rem;
+}
+.footer-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  margin-bottom: 10px;
+}
+.footer-box .footer-section .title {
+  color: var(--title);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.footer-box .footer-section .sub-title {
+  color: var(--subtitle);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.footer-box .footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  color: var(--title);
+  margin-bottom: 1rem;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-box .footer-section ul li {
+  margin-bottom: 0.9rem;
+}
+.footer-box .footer-section ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--subtitle);
+}
+.footer-box .footer-section ul li a:hover {
+  color: var(--hover);
+}
+.footer-box .social-icons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.9rem;
+}
+.footer-box .social-icons a {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+/* Copyright */
+.footer-bottom {
+  text-align: center;
+  margin-bottom: 0;
+  border-top: 1px solid var(--border);
+  padding-top: 1.2rem;
+  font-size: 1.03rem;
+  color: var(--subtitle);
+}
+/* Button */
+.scroll2Top {
+  background-color: var(--blue);
+  cursor: pointer;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  position: fixed;
+  color: #fff;
+  bottom: 2rem;
+  right: -5%;
+  text-align: center;
+  border: 1px solid var(--border);
+  font-size: 1.25rem;
+}
+.scroll2Top.active {
+  right: 3%;
+}
+.scroll2Top:hover {
+  background-color: var(--hover);
+}
