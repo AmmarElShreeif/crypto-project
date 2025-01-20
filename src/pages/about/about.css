@@ -29,3 +29,8 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 700px) {
+  .about .container .animation {
+    display: none;
+  }
+}

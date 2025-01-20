@@ -22,7 +22,6 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // يمكنك هنا إرسال البيانات إلى السيرفر أو خدمة خارجية
     console.log("Form Data Submitted:", formData);
     setIsSubmitted(true);
   };
@@ -71,7 +70,7 @@ function Contact() {
             </form>
           )}
         </div>
-        <div>
+        <div className="animation">
           <Lottie
             className=""
             loop={true}

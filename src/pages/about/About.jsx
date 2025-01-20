@@ -1,6 +1,6 @@
+import Lottie from "lottie-react";
 import cryptoAnimation from "../../animation/aboutCrypto.json";
 import "./about.css";
-import Lottie from "lottie-react";
 
 function About() {
   return (

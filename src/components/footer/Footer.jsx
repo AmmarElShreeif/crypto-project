@@ -7,10 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-box">
           <div className="footer-section">
-            <h1 className="title">
-              <i className="ri-btc-line"></i>
-              CryptoHub
-            </h1>
+            <h1 className="title">CryptoHub</h1>
             <p className="sub-title">
               CryptoHub is your go-to platform for real-time cryptocurrency
               prices, market analysis, and more. Stay updated with the latest
@@ -43,7 +40,7 @@ const Footer = () => {
             <h3>Follow Us</h3>
             <ul className="social-icons">
               {soicalMedia.map((item, index) => (
-                <li>
+                <li key={index}>
                   <a href={item.href} key={index}>
                     <span className={item.icon} /> {item.title}
                   </a>
@@ -59,11 +56,6 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Ammar ElShreif. All Rights Reserved.
         </p>
       </div>
-      <a href="#">
-        <button className="scroll2Top">
-          <i className="ri-arrow-up-s-line"></i>
-        </button>
-      </a>
     </footer>
   );
 };

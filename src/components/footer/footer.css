@@ -58,24 +58,10 @@
   font-size: 1.03rem;
   color: var(--subtitle);
 }
-/* Button */
-.scroll2Top {
-  background-color: var(--blue);
-  cursor: pointer;
-  width: 2.6rem;
-  height: 2.6rem;
-  border-radius: 50%;
-  position: fixed;
-  color: #fff;
-  bottom: 2rem;
-  right: -5%;
-  text-align: center;
-  border: 1px solid var(--border);
-  font-size: 1.25rem;
-}
-.scroll2Top.active {
-  right: 3%;
-}
-.scroll2Top:hover {
-  background-color: var(--hover);
+@media (max-width: 700px) {
+  .footer-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+  }
 }

@@ -1,11 +1,13 @@
-import React from "react";
+import "./profile.css";
 
-const Profile = () => {
+const Profile = ({ onClick, photo }) => {
   return (
     <div className="dropdown">
-      <span>Mouse over me</span>
+      <img src={photo} alt="Your Photo" />
       <div className="dropdown-content">
-        <p>Hello World!</p>
+        <button onClick={onClick} className="sign-out">
+          Sign Out
+        </button>
       </div>
     </div>
   );

@@ -74,6 +74,9 @@ header .header-buttons #menu {
   border-radius: 15px;
   display: none;
 }
+header .header-buttons #menu span {
+  font-size: 1.3rem;
+}
 header .header-buttons #theme:hover,
 header .header-buttons #menu:hover {
   border: 1px solid var(--blue);
@@ -136,4 +139,11 @@ header .nav-fixed #close {
 }
 header .nav-fixed #close:hover {
   color: var(--hover);
+}
+
+@media (max-width: 700px) {
+  header .header-buttons #menu {
+    display: flex;
+    align-items: center;
+  }
 }

@@ -23,7 +23,7 @@ const Home = () => {
           </div>
           <div className="home-image">
             <Lottie
-              className=""
+              className="animation"
               loop={true}
               autoplay={true}
               style={{ width: 400, height: 400 }}
